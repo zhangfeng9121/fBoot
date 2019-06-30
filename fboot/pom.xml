@@ -16,6 +16,10 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <thymeleaf.spring5>3.0.9.RELEASE</thymeleaf.spring5>
+        <!-- 布局功能的支持程序 thymeleaf3主程序 layout2以上版本 -->
+        <!-- thymeleaf2 layout1-->
+        <thymeleaf-layout-dialect.version>2.2.2</thymeleaf-layout-dialect.version>
     </properties>
 
     <dependencies>
@@ -28,6 +32,19 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <!--thymeleaf 引入-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+
+        <!--bootstrape 引入-->
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>bootstrap</artifactId>
+            <version>4.3.1</version>
         </dependency>
     </dependencies>
 
