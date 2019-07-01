@@ -1,10 +1,12 @@
 package boot.itzf.cn.config;
 
 import boot.itzf.cn.component.MyLocalResolver;
+import boot.itzf.cn.component.MyLoginHandlerInterceptor;
 import com.sun.org.apache.bcel.internal.generic.RETURN;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.LocaleResolver;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
@@ -39,6 +41,7 @@ public class MyMvcConfig implements WebMvcConfigurer {
                 registry.addViewController("/").setViewName("login");
                 registry.addViewController("/login").setViewName("login");
                 registry.addViewController("/index.html").setViewName("login");
+                registry.addViewController("/main.html").setViewName("dashboard");
             }
         };
         return webMvcConfigurer;
@@ -48,5 +51,13 @@ public class MyMvcConfig implements WebMvcConfigurer {
     public LocaleResolver localeResolver() {
         MyLocalResolver myLocalResolver = new MyLocalResolver();
         return  myLocalResolver;
+    }
+
+    /**
+     * 自定义拦截器注入到容器中
+     */
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(new MyLoginHandlerInterceptor()).excludePathPatterns("/", "/index.html", "/login/user");
     }
 }
