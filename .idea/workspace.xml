@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a6807b8-e539-4015-bc1a-ef86b38090b6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/fboot/src/main/java/boot/itzf/cn/config/MyMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/fboot/src/main/java/boot/itzf/cn/config/MyMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fboot/src/main/resources/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/fboot/src/main/resources/templates/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fboot/src/main/resources/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/fboot/src/main/resources/templates/emp/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fboot/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/fboot/src/main/resources/templates/login.html" afterDir="false" />
-    </list>
+    <list default="true" id="1a6807b8-e539-4015-bc1a-ef86b38090b6" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/fboot/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -391,6 +386,7 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/fboot/pom.xml" />
@@ -445,16 +441,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561944488016</updated>
-      <workItem from="1561944498085" duration="7925000" />
+      <workItem from="1561944498085" duration="8090000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7925000" />
+    <option name="totallyTimeSpent" value="8090000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
@@ -462,7 +457,7 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Web" order="4" side_tool="true" />
       <window_info id="Designer" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.1814301" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.1814301" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
@@ -474,7 +469,7 @@
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.32922733" />
-      <window_info anchor="bottom" id="Run" order="10" visible="true" weight="0.54087347" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.54087347" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.39977604" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
