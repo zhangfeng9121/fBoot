@@ -77,8 +77,8 @@
 									<td th:text="${emp.department.departmentName}"></td>
 									<td th:text="${#dates.format(emp.birth, 'yyyy-MM-dd HH:mm:ss')}"></td>
 									<td>
-										<a class="btn btn-sm btn-primary">编辑</a>
-										<a class="btn btn-sm btn-danger">删除</a>
+										<a class="btn btn-sm btn-primary" th:href="@{/emp/} + ${emp.id}">编辑</a>
+										<button th:ari_url="@{/emp/} + ${emp.id}" class="btn btn-sm btn-danger" th:href="@{/emp/} + ${emp.id}">删除</button>
 									</td>
 								</tr>
 							</tbody>
@@ -86,6 +86,10 @@
 					</div>
 				</main>
 			</div>
+
+			<form th:id="deleteEmp" th:method="post">
+				<input th:name="_method" th:value="delete">
+			</form>
 		</div>
 
 		<!-- Bootstrap core JavaScript
@@ -104,7 +108,11 @@
 		<!-- Graphs -->
 		<script type="text/javascript" src="asserts/js/Chart.min.js" th:src="@{/asserts/js/Chart.min.js}"></script>
 		<script>
-
+			$(".btn-danger").click(
+				function () {
+					$("#deleteEmp").attr("action", $(this).attr("ari_url")).submit();
+				}
+			);
 		</script>
 
 	</body>
