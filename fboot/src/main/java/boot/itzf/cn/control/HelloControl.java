@@ -1,7 +1,9 @@
 package boot.itzf.cn.control;
 
+import boot.itzf.cn.exception.MyException;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.xml.ws.RequestWrapper;
 
@@ -13,7 +15,10 @@ import javax.xml.ws.RequestWrapper;
 @Controller
 public class HelloControl {
     @RequestMapping(value = "/hello")
-    public String hello(){
-        return "index.html";
+    public String hello(@RequestParam("user") String user){
+        if ("123".equals(user)){
+            throw new MyException();
+        }
+        return "redirect:/index.html";
     }
 }

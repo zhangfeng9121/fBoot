@@ -19,7 +19,7 @@ public class LoginControl {
                         @RequestParam("password") String password,
                         Map<String, Object> map,
                         HttpSession session) {
-        if(!StringUtils.isEmpty(username) && "123456".equals(password)) {
+        if(!StringUtils.isEmpty(username) && "123".equals(password)) {
             session.setAttribute("userName", username);
             return "redirect:/main.html";
         }else {

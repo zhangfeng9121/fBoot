@@ -9,5 +9,4 @@ public class FbootApplication {
     public static void main(String[] args) {
         SpringApplication.run(FbootApplication.class, args);
     }
-
 }

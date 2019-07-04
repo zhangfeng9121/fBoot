@@ -50,7 +50,7 @@ public class MyMvcConfig implements WebMvcConfigurer {
     @Bean
     public LocaleResolver localeResolver() {
         MyLocalResolver myLocalResolver = new MyLocalResolver();
-        return  myLocalResolver;
+        return myLocalResolver;
     }
 
     /**
@@ -58,6 +58,6 @@ public class MyMvcConfig implements WebMvcConfigurer {
      */
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new MyLoginHandlerInterceptor()).excludePathPatterns("/", "/index.html", "/login/user");
+//        registry.addInterceptor(new MyLoginHandlerInterceptor()).excludePathPatterns("/", "/index.html", "/login/user");
     }
 }
